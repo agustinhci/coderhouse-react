@@ -8,7 +8,7 @@
 
 body {
     color: #0d0d0d;
-    background-color: #f8f8f8 !important
+    background-color: #e1e1e1;
 }
 
 header {
@@ -24,8 +24,17 @@ header {
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
 .logo {
+    color: #f8f8f8;
     font-family: 'Oswald', sans-serif;
     font-size: 60px;
+    
+}
+
+.logo:link,
+.logo:visited,
+.logo:hover,
+.logo:active {
+    text-transform: none;
 }
 
 .header__links {
@@ -42,7 +51,7 @@ nav {
     list-style: none;
 }
 
-.nav__items li a {
+.nav__items--links {
     color: #f8f8f8;
     font-weight: 500;
     text-decoration: none;
@@ -51,7 +60,7 @@ nav {
     border-radius: 10px;
 }
 
-.nav__items li a:hover {
+.nav__items--links:hover {
     background-color: #191919;
     
 }
@@ -93,15 +102,4 @@ nav {
     font-weight: 600;
     color: #0d0d0d;
     border-radius: 50px;
-}
-
-.itemList--container {
-    color: #191919;
-    background-color: #e1e1e1;
-    padding: 20px 40px;
-    font-weight: 600;
-    position: fixed;
-    right: 0;
-    width: 30%;
-    height: 100%;
 }
