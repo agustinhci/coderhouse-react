@@ -15,7 +15,7 @@ export const ItemDetail = ( props ) => {
                 <h2 className="itemDetail__title">{props.name}</h2>
                 <p className="itemDetail__info">Categoría: {props.category}</p>
                 <p className="itemDetail__info">Descripción: {props.description}</p>
-                <p className="itemDetail__info">Precio: {props.price}</p>
+                <p className="itemDetail__info">Precio: ${props.price}</p>
             </section>
             <footer className="itemDetail__footer">
                 <ItemCount initial={1} stock={props.stock} onAdd={(quantity) => console.log('Cantidad agregada: ', quantity)}/>

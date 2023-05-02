@@ -4,7 +4,7 @@ const products = [
         name: 'Nike Court Legacy Canvas', 
         price: '29999', 
         stock: 10, 
-        category: 'Hombre', 
+        category: 'Hombres', 
         description: 'El Nike Court Legacy Canvas, que rinde tributo a su historia en la cultura del tenis, reinventa un clásico con su diseño moderno y digno de la calle.',
         img: 'https://nikearprod.vtexassets.com/arquivos/ids/451635/CW6539_601_A_PREM.jpg?v=638149273177430000'
     },
@@ -13,7 +13,7 @@ const products = [
         name: 'Nike Air Max SC', 
         price: '39999', 
         stock: 16, 
-        category: 'Hombre', 
+        category: 'Hombres', 
         description: 'Con sus líneas simples, el look de atletismo tradicional y, por supuesto, la amortiguación Air visible, el Nike Air Max SC es el toque final perfecto para cualquier atuendo.',
         img: 'https://nikearprod.vtexassets.com/arquivos/ids/490251/CW4555_006_A_PREM.jpg?v=638150955997230000'
     },
@@ -22,7 +22,7 @@ const products = [
         name: 'Jordan Air 200E', 
         price: '69999', 
         stock: 8, 
-        category: 'Hombre', 
+        category: 'Hombres', 
         description: 'Diseñado para recorrer las calles con la comodidad y actitud en mente, el Jordan Air 200E combina la última tecnología con materiales duraderos, a la vez que se mantiene fiel al ADN Jordan.',
         img: 'https://nikearprod.vtexassets.com/arquivos/ids/157475/BQ4422_400_A_PREM-hei-3144-wid-3144-fmt.jpg?v=638086306186430000'
     },
@@ -31,7 +31,7 @@ const products = [
         name: 'Nike Flex Experience Run 11 Next Nature',
         price: '29999',
         stock: 5,
-        category: 'Mujer',
+        category: 'Mujeres',
         description: 'Es cómodo y tiene un estilo zen, como las carreras ideales. Creamos un diseño ligero, impecable y excepcional con el Nike Flex Experience Run 11 Next Nature.',
         img: 'https://nikearprod.vtexassets.com/arquivos/ids/489695/DD9283_001_A_PREM.jpg?v=638150948567130000'
     },
@@ -40,7 +40,7 @@ const products = [
         name: 'Nike Downshifter 12', 
         price: '32999', 
         stock: 43, 
-        category: 'Mujer', 
+        category: 'Mujeres', 
         description: 'Da los primeros pasos en tu experiencia con el running con el Nike Downshifter 12. Ofrece un ajuste firme y una pisada estable con una sensación ligera que te permite pasar fácilmente del entrenamiento al resto del día.',
         img: 'https://nikearprod.vtexassets.com/arquivos/ids/407133/DD9294_500_A_PREM.jpg?v=638143123093070000'
     },
@@ -49,7 +49,7 @@ const products = [
         name: 'Nike Waffle Debut', 
         price: '33999', 
         stock: 5, 
-        category: 'Mujer', 
+        category: 'Mujeres', 
         description: 'El estilo de running retro se moderniza con el Nike Waffle Debut. La gamuza y el nylon que conmemoran una era se combinan con una entresuela modernizada con forma de cuña para brindar un look fresco pero clásico.',
         img: 'https://nikearprod.vtexassets.com/arquivos/ids/318573/DX2940_100_A_PREM.jpg?v=638128499676900000'
     },
@@ -98,10 +98,10 @@ export const getProductById = (productId) => {
     })
 }
 
-export const getProductsByCategory = (productCategory) => {
+export const getProductsByCategory = (categoryId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products.find(prod => prod.category === productCategory ))
+            resolve(products.filter(prod => prod.category === categoryId ))
         }, 500)
     })
 }

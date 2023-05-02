@@ -51,6 +51,14 @@
     font-weight: 600;
     width: 100%;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item__footer--option p {
+    color: #0d0d0d;
+    font-weight: 600;
 }
 
 .item__footer--option:hover {

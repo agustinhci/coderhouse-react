@@ -11,9 +11,9 @@ export const NavBar = () => {
         <div className="header__links">
           <nav>
               <ul className="nav__items">
-                  <NavLink className="nav__items--links" to={`/category/hombres`}>Hombres</NavLink>
-                  <NavLink className="nav__items--links" to={`/category/mujeres`}>Mujeres</NavLink>
-                  <NavLink className="nav__items--links" to={`/category/niños`}>Niños</NavLink>
+                  <NavLink className="nav__items--links" to={`/category/Hombres`}>Hombres</NavLink>
+                  <NavLink className="nav__items--links" to={`/category/Mujeres`}>Mujeres</NavLink>
+                  <NavLink className="nav__items--links" to={`/category/Niños`}>Niños</NavLink>
               </ul>
           </nav>
           <CartWidget />
