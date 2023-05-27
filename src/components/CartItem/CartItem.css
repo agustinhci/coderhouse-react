@@ -1,0 +1,26 @@
+.cartList {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.cartItem {
+    color: #fff;
+    background-color: #0d0d0d;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    border-radius: 20px;
+}
+
+.removeItem {
+    background-color: #ffbf00;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
