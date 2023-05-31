@@ -26,13 +26,13 @@ export const ItemDetail = ( props ) => {
     return (
         <article className="itemDetail">
             <header className="itemDetail__header">
-                <img  className="itemDetail__header--img" src={props.img} alt={props.name} />
+                <img  className="itemDetail__header--img" src={img} alt={name} />
             </header>
             <section className="itemDetail__section">
-                <h2 className="itemDetail__title">{props.name}</h2>
-                <p className="itemDetail__info">Categoría: {props.category}</p>
-                <p className="itemDetail__info">Descripción: {props.description}</p>
-                <p className="itemDetail__info">Precio: ${props.price}</p>
+                <h2 className="itemDetail__title">{name}</h2>
+                <p className="itemDetail__info">Categoría: {category}</p>
+                <p className="itemDetail__info">Descripción: {description}</p>
+                <p className="itemDetail__info">Precio: ${price}</p>
             </section>
             <footer className="itemDetail__footer">
                 {
