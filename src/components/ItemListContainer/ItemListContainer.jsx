@@ -37,6 +37,12 @@ export const ItemListContainer = ({ greeting }) => {
 
     }, [categoryId])
 
+    if(loading) {
+        return (
+            <div>Loading</div>
+        )
+    }
+
     return (
         <div className="itemList--container">
             <p className="greeting">{greeting}</p>

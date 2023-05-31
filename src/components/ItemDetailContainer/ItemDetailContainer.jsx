@@ -34,6 +34,12 @@ export const ItemDetailContainer = () => {
 
     }, [itemId])
     
+    if(loading) {
+        return (
+            <div>Loading</div>
+        )
+    }
+    
     return (
         <div className="itemDetail__container">
             <ItemDetail {...product} />
